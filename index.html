@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flash Cards</title>
+    <!-- bootswatch -->
+    <link
+      rel="stylesheet"
+      href="https://bootswatch.com/4/minty/bootstrap.min.css"
+    />
+    <!-- css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="container mt-4">
+      <h1>Flashcards</h1>
+      <button class="btn btn-info">Add Question</button>
+      <form id="card-form" class="p-4 my-4 border border-primary rounded w-50">
+        <input
+          type="submit"
+          value="X"
+          class="btn btn-danger float-right mb-1"
+        />
+        <div class="form-group">
+          <label for="question">Question</label>
+          <input type="text" id="question" class="form-control" />
+        </div>
+        <div>
+          <label for="answer">Answer</label>
+          <input type="text" id="answer" class="form-control" />
+        </div>
+        <input
+          type="submit"
+          class="btn btn-primary btn-block mt-3"
+          value="Create Card"
+        />
+      </form>
+      <div class="row" id="card-list">
+        <div class="col-sm question border p-2 m-2">
+          <h2>#question</h2>
+          <a href="#">Show/Hide Answer</a>
+          <h3>#answer/hidden</h3>
+          <input type="submit" class="btn btn-primary m-1" value="EDIT" />
+          <input
+            type="submit"
+            class="btn btn-danger float-right m-1"
+            value="DELETE"
+          />
+        </div>
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
