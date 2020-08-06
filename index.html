@@ -14,41 +14,36 @@
   </head>
   <body>
     <div class="container mt-4">
-      <h1>Flashcards</h1>
-      <button class="btn btn-info">Add Question</button>
-      <form id="card-form" class="p-4 my-4 border border-primary rounded w-50">
-        <input
-          type="submit"
-          value="X"
-          class="btn btn-danger float-right mb-1"
-        />
-        <div class="form-group">
-          <label for="question">Question</label>
-          <input type="text" id="question" class="form-control" />
-        </div>
-        <div>
-          <label for="answer">Answer</label>
-          <input type="text" id="answer" class="form-control" />
-        </div>
-        <input
-          type="submit"
-          class="btn btn-primary btn-block mt-3"
-          value="Create Card"
-        />
-      </form>
-      <div class="row" id="card-list">
-        <div class="col-sm question border p-2 m-2">
-          <h2>#question</h2>
-          <a href="#">Show/Hide Answer</a>
-          <h3>#answer/hidden</h3>
-          <input type="submit" class="btn btn-primary m-1" value="EDIT" />
+      <div id="top-half">
+        <h1>Flashcards</h1>
+        <button class="btn btn-info" id="show-form">Add Question</button>
+        <form
+          id="card-form"
+          class="p-4 my-4 border border-primary rounded w-50 hide"
+        >
+          <input
+            type="button"
+            value="X"
+            class="btn btn-danger float-right mb-1"
+            id="hide-form"
+          />
+          <div class="form-group">
+            <label for="question">Question</label>
+            <input type="text" id="question" class="form-control" />
+          </div>
+          <div>
+            <label for="answer">Answer</label>
+            <input type="text" id="answer" class="form-control" />
+          </div>
           <input
             type="submit"
-            class="btn btn-danger float-right m-1"
-            value="DELETE"
+            class="btn btn-primary btn-block mt-3"
+            value="Create Card"
+            id="add-problem"
           />
-        </div>
+        </form>
       </div>
+      <div class="cards-container" id="cards-list"></div>
     </div>
     <script src="./app.js"></script>
   </body>
