@@ -4,7 +4,7 @@
 
 A Flash Card Project made with OOP in JS.
 
-This project is a variation of Traversy Media's Booklist project - https://www.youtube.com/watch?v=JaMCxVWtW58
+This project is a variation of [Traversy Media's Booklist project](https://www.youtube.com/watch?v=JaMCxVWtW58).
 
 It allows for quite a bit of interactivity from the user creating simple flash cards. 
 
