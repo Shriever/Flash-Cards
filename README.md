@@ -8,4 +8,4 @@ This project is a variation of [Traversy Media's Booklist project](https://www.y
 
 It allows for quite a bit of interactivity from the user creating simple flash cards. 
 
-After creating this project I feel more comfortable with OOP and interacting with localStorage.
+After completing this project, I feel more comfortable with OOP and interacting with localStorage.
