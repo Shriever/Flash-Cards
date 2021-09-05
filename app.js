@@ -82,7 +82,6 @@ class UI {
       const question = el.parentElement.children[0].textContent;
       const answer = el.parentElement.children[2].textContent;
 
-      // Remove problem from Store
       Store.removeProblem(question);
 
       el.parentElement.remove();
@@ -151,7 +150,7 @@ document.getElementById("card-form").addEventListener("submit", (e) => {
   if (question === "" || answer === "") {
     UI.showAlert("Please fill in all fields", "danger");
   } else {
-    // instatiate problem
+    // instantiate problem
     const problem = new Problem(question, answer);
 
     // add problem to UI
@@ -167,7 +166,6 @@ document.getElementById("card-form").addEventListener("submit", (e) => {
 });
 // Event: Delete Problem
 document.querySelector("#cards-list").addEventListener("click", (e) => {
-  // delete problem from UI
   UI.deleteProblem(e.target);
 });
 // Event: Edit Problem
