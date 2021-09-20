@@ -153,10 +153,10 @@ document.getElementById("card-form").addEventListener("submit", (e) => {
     // instantiate problem
     const problem = new Problem(question, answer);
 
-    // add problem to UI
+    // Add Problem to UI
     UI.addProblemToList(problem);
 
-    // Add problem to store
+    // Add Problem to Store
     Store.addProblem(problem);
 
     UI.clearFields();
