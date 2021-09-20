@@ -156,7 +156,7 @@ document.getElementById("card-form").addEventListener("submit", (e) => {
     // add problem to UI
     UI.addProblemToList(problem);
 
-    // add problem to store
+    // Add problem to store
     Store.addProblem(problem);
 
     UI.clearFields();
